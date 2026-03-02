@@ -1,0 +1,26 @@
+.uni-tip {
+  padding: 10px 13px;
+  background: #FFF7E6;
+  border-radius: 4px 4px 4px 4px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  width: 100%;
+  .icon {
+    color: #FAAD14;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  .overflow-wrapper {
+    display: flex;
+    width: calc(100% - 30px);
+    > * {
+      flex-shrink: 0;
+      &:first-child {
+        flex: 1;
+        overflow: hidden;
+      }
+    }
+  }
+}

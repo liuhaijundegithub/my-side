@@ -1,0 +1,114 @@
+.uni-batch-import {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    > div {
+      &:last-child {
+        button {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .content {
+    ul {
+      margin: 0;
+      padding-inline-start: 20px;
+    }
+  }
+  .step {
+    display: flex;
+    width: 844px;
+    margin: 34px auto 50px;
+    justify-content: space-between;
+    > div {
+      display: flex;
+      justify-content:baseline;
+      align-items: baseline;
+      color: var(--font-color-grey);
+      position: relative;
+      &:not(:last-child) {
+        &:nth-child(2) {
+          &::after {
+            width: 260px;
+          }
+        }
+        &::after {
+          display: block;
+          content: '';
+          position: absolute;
+          width: 230px;
+          height: 1px;
+          background-color: var(--border-color);
+          top: 16px;
+          left: 100px;
+        }
+      }
+      &.active {
+        > div:first-child {
+          background-color: var(--main-color);
+          color: #fff;
+          border-color: var(--main-color);
+        }
+        > div:last-child {
+          > div:first-child {
+            font-weight: bolder;
+            color: var(--font-color);
+          }
+        }
+      }
+      > div:first-child {
+        height: 32px;
+        width: 32px;
+        border-radius: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: var(--font-color-grey);
+        border: var(--border);
+        margin-right: 10px;
+      }
+      > div:last-child {
+        position: relative;
+        top: -2px;
+      }
+    }
+  }
+  .select-file {
+    width: 720px;
+    margin: 0 auto 60px;
+    > div {
+      &:not(:last-child) {
+        padding: 24px;
+        background-color: var(--base-background-color);
+      }
+    }
+  }
+}
+
+.result {
+  .export {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.history {
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.history-detail {
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,111 @@
+.home {
+  color: var(--blog-text-color);
+}
+
+.section {
+  margin-bottom: 48px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.greeting {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--blog-text-color);
+}
+
+.aboutSite {
+  line-height: 1.8;
+  color: var(--blog-text-color);
+
+  p {
+    margin-bottom: 12px;
+  }
+
+  del {
+    color: var(--blog-secondary-text);
+  }
+}
+
+.membershipLink {
+  color: var(--main-color);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.rssIcon {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--main-color);
+  text-decoration: none;
+  font-weight: 500;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.aboutMe {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.bio {
+  flex: 1;
+  line-height: 1.8;
+  color: var(--blog-text-color);
+
+  p {
+    margin-bottom: 12px;
+  }
+}
+
+.socialLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.socialLink {
+  color: var(--main-color);
+  text-decoration: none;
+  font-size: 14px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,98 @@
+@charset "UTF-8";
+:root {
+  --main-color: var(--uni-main-color);
+  --max-z-index: 1000;
+  --border-color: #E5E5E5;
+  --base-border-radius: 4px;
+  --border: 1px solid var(--border-color);
+  --error-color: #FF7189;
+  --font-color: #393939;
+  --base-background-color: #F5F6FA;
+  --font-color-grey: #999999;
+  --font-color-dark-grey: #666;
+  --main-hover-color: var(--lighter-main-color);
+  --icon-color: #757D91;
+
+  /* 博客主题变量 - 亮色模式 */
+  --blog-bg-color: #ffffff;
+  --blog-text-color: #393939;
+  --blog-secondary-text: #666666;
+  --blog-border-color: #E5E5E5;
+  --blog-card-bg: #ffffff;
+  --blog-hover-bg: #f5f5f5;
+
+  color: var(--font-color);
+}
+
+/* 暗色模式 */
+[data-theme='dark'] {
+  --main-color: var(--uni-main-color);
+  --border-color: #333333;
+  --border: 1px solid var(--border-color);
+  --font-color: #e5e5e5;
+  --base-background-color: #1a1a1a;
+  --font-color-grey: #a0a0a0;
+  --font-color-dark-grey: #c0c0c0;
+  --main-hover-color: #3a3a3a;
+  --icon-color: #a0a0a0;
+
+  /* 博客主题变量 - 暗色模式 */
+  --blog-bg-color: #1a1a1a;
+  --blog-text-color: #e5e5e5;
+  --blog-secondary-text: #a0a0a0;
+  --blog-border-color: #333333;
+  --blog-card-bg: #252525;
+  --blog-hover-bg: #333333;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  word-break: break-all;
+}
+body, html {
+  font-family: MicrosoftYaHei Avenir,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  height: 100%;
+  line-height: unset;
+  min-width: 1200px;
+  color: var(--font-color);
+}
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+a {
+  text-decoration: none
+}
+small {
+  font-size:12px;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+hr {
+  margin-top:20px;
+  margin-bottom:20px;
+  border:0;
+  border-top:1px solid #eee;
+}
+#root {
+  height: 100%;
+}

@@ -1,0 +1,22 @@
+.tab {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  height: 40px;
+  > span {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 32px;
+    padding-bottom: 12px;
+    font-size: var(--font-size-14);
+    height: 100%;
+    margin-bottom: -4px;
+    align-items: center;
+    &.active {
+      font-weight: bolder;
+      border-bottom: 3px solid var(--main-color);
+      font-size: var(--font-size-16);
+    }
+  }
+}

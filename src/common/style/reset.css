@@ -64,6 +64,14 @@ body, html {
   min-width: 1200px;
   color: var(--font-color);
 }
+
+/* H5 移动端适配 */
+@media screen and (max-width: 768px) {
+  body, html {
+    min-width: 100%;
+    font-size: 14px;
+  }
+}
 h1,
 h2,
 h3,

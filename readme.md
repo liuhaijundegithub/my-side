@@ -1,4 +1,2 @@
-
-unisolution frontend template repository
-
-by Faker
+personal side
+by ORIGINALFAKER

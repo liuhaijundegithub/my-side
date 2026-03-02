@@ -1,6 +1,7 @@
 import React from 'react';
 import { profileInfo } from '../shared/constants';
 import styles from './Home.module.less';
+import img from '@/assets/images/me.jpg';
 
 const Home: React.FC = () => {
   return (
@@ -25,7 +26,7 @@ const Home: React.FC = () => {
         <h2 className={styles.sectionTitle}>关于我</h2>
         <div className={styles.aboutMe}>
           <img
-            src={profileInfo.avatar}
+            src={img}
             alt={profileInfo.name}
             className={styles.avatar}
           />
@@ -40,7 +41,7 @@ const Home: React.FC = () => {
               ))}
             </p>
             <p>
-              除了这里，你还可以在{' '}
+              除了这里，你还可以在
               {profileInfo.socialLinks.map((link, index) => (
                 <span key={link.name}>
                   <a href={link.url} target="_blank" rel="noopener noreferrer" className={styles.socialLink}>

@@ -9,7 +9,6 @@ export const profileInfo = {
     '热爱前端技术，专注于 React、TypeScript 等技术栈'
   ],
   socialLinks: [
-    { name: 'GitHub', url: 'https://github.com' },
-    { name: 'B 站', url: 'https://bilibili.com' }
+    { name: 'GitHub', url: 'https://github.com/liuhaijundegithub' }
   ]
 };

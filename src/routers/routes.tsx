@@ -4,6 +4,7 @@ import withLazyLoad from '@/common/hoc/withLazyLoad';
 import BlogLayout from '@/layout/BlogLayout';
 
 const Home = withLazyLoad(() => import('@/pages/blog/home/Home'));
+const Redirect = withLazyLoad(() => import('@/common/pages/exceptions/Redirect'));
 
 const routes: UniRouteObject[] = [
   {
@@ -12,6 +13,10 @@ const routes: UniRouteObject[] = [
     children: [
       { index: true, element: <Home /> }
     ]
+  },
+  {
+    path: '/page-redirect',
+    element: <Redirect />
   },
   {
     path: '/404',

@@ -55,6 +55,13 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* 备案信息 */}
+      <footer className={styles.footer}>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">
+          苏ICP备2026010442号
+        </a>
+      </footer>
     </div>
   );
 };

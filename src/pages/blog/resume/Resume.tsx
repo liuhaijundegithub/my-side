@@ -96,6 +96,21 @@ const Resume: React.FC = () => {
         </ul>
       </section>
 
+      {/* 开源项目 */}
+      <section className={styles.section}>
+        <h2 className={styles.sectionTitle}>开源项目</h2>
+        <div className={styles.openSourceItem}>
+          <h3 className={styles.projectName}>
+            <a href="https://www.npmjs.com/package/uni-player" target="_blank" rel="noopener noreferrer">
+              uni-player
+            </a>
+          </h3>
+          <p className={styles.projectDesc}>
+            轻量级 JavaScript 视频播放器插件，支持普通视频、HLS/FLV 视频流、直播模式，提供多视频源切换、全屏控制、音量调节等完整 API，零依赖。
+          </p>
+        </div>
+      </section>
+
       {/* 页脚 */}
       <footer className={styles.footer}>
         <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">

@@ -1,9 +1,22 @@
 import React from 'react';
 import styles from './Resume.module.less';
+import avatar from '@/assets/images/me.jpg';
 
 const Resume: React.FC = () => {
   return (
     <div className={styles.resume}>
+
+      {/* 个人信息 */}
+      <header className={styles.header}>
+        <img src={avatar} alt="刘海军" className={styles.avatar} />
+        <div className={styles.info}>
+          <h1 className={styles.name}>刘海军</h1>
+          <p className={styles.title}>前端开发工程师 · 8年经验</p>
+          <a className={styles.github} href="https://github.com/liuhaijundegithub" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+        </div>
+      </header>
 
       {/* 工作经历 */}
       <section className={styles.section}>
@@ -81,21 +94,6 @@ const Resume: React.FC = () => {
           {/* <li>大学英语四级 (CET-4)</li> */}
           <li>大学英语六级 (CET-6)</li>
         </ul>
-      </section>
-
-      {/* 开源项目 */}
-      <section className={styles.section}>
-        <h2 className={styles.sectionTitle}>开源项目</h2>
-        <div className={styles.openSourceItem}>
-          <h3 className={styles.projectName}>
-            <a href="https://www.npmjs.com/package/uni-player" target="_blank" rel="noopener noreferrer">
-              uni-player
-            </a>
-          </h3>
-          <p className={styles.projectDesc}>
-            轻量级 JavaScript 视频播放器插件，支持普通视频、HLS/FLV 视频流、直播模式，提供多视频源切换、全屏控制、音量调节等完整 API，零依赖。
-          </p>
-        </div>
       </section>
 
       {/* 页脚 */}

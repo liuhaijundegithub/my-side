@@ -1,0 +1,246 @@
+.resume {
+  padding: 32px 24px;
+  max-width: 850px;
+  margin: 0 auto;
+  min-height: calc(100vh - 100px);
+}
+
+/* 区块 */
+.section {
+  margin-bottom: 36px;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--blog-text-color);
+  margin: 0 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #5197ff;
+  display: inline-block;
+}
+
+/* 条目 */
+.item {
+  margin-bottom: 28px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.company {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--blog-text-color);
+}
+
+.date {
+  font-size: 15px;
+  color: var(--blog-text-secondary, #888);
+  white-space: nowrap;
+}
+
+.position {
+  font-size: 15px;
+  color: var(--blog-text-secondary, #666);
+  margin: 0 0 12px;
+}
+
+.description {
+  font-size: 15px;
+  color: var(--blog-text-color);
+  margin: 0 0 12px;
+  line-height: 1.7;
+
+  a {
+    color: #5197ff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* 子区块 */
+.subSection {
+  margin-top: 16px;
+}
+
+.subTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--blog-text-color);
+  margin: 0 0 10px;
+  padding-left: 12px;
+  border-left: 3px solid #5197ff;
+}
+
+/* 工作内容列表 */
+.workList {
+  margin: 0;
+  padding-left: 22px;
+
+  li {
+    font-size: 14px;
+    color: var(--blog-text-color);
+    line-height: 1.8;
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: var(--blog-text-color);
+    }
+  }
+}
+
+/* 证书列表 */
+.certificateList {
+  margin: 0;
+  padding-left: 22px;
+
+  li {
+    font-size: 15px;
+    color: var(--blog-text-color);
+    line-height: 1.9;
+  }
+}
+
+/* 开源项目 */
+.openSourceItem {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.projectName {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px;
+
+  a {
+    color: #5197ff;
+    text-decoration: underline;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.projectDesc {
+  font-size: 14px;
+  color: var(--blog-text-secondary, #666);
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* 页脚 */
+.footer {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--blog-border-color, #e8e8e8);
+  text-align: center;
+
+  a {
+    font-size: 13px;
+    color: var(--blog-text-secondary, #999);
+    text-decoration: none;
+
+    &:hover {
+      color: #5197ff;
+    }
+  }
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+  .resume {
+    padding: 20px 16px;
+  }
+
+  .section {
+    margin-bottom: 28px;
+  }
+
+  .sectionTitle {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .itemHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .company {
+    font-size: 17px;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+
+  .position {
+    font-size: 14px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .subSection {
+    margin-top: 14px;
+  }
+
+  .subTitle {
+    font-size: 14px;
+  }
+
+  .workList li {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 6px;
+  }
+
+  .certificateList li {
+    font-size: 14px;
+  }
+
+  .projectName {
+    font-size: 15px;
+  }
+
+  .projectDesc {
+    font-size: 13px;
+  }
+
+  .footer {
+    margin-top: 40px;
+    padding-top: 20px;
+  }
+}
+
+/* 暗色模式 */
+:global([data-theme='dark']) {
+  .footer {
+    border-top-color: #333;
+  }
+}

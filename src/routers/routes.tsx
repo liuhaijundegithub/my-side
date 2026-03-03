@@ -4,6 +4,7 @@ import withLazyLoad from '@/common/hoc/withLazyLoad';
 import BlogLayout from '@/layout/BlogLayout';
 
 const Home = withLazyLoad(() => import('@/pages/blog/home/Home'));
+const Resume = withLazyLoad(() => import('@/pages/blog/resume/Resume'));
 const Redirect = withLazyLoad(() => import('@/common/pages/exceptions/Redirect'));
 
 const routes: UniRouteObject[] = [
@@ -11,7 +12,8 @@ const routes: UniRouteObject[] = [
     path: '/',
     element: <BlogLayout />,
     children: [
-      { index: true, element: <Home /> }
+      { index: true, element: <Home /> },
+      { path: 'resume', element: <Resume /> }
     ]
   },
   {
